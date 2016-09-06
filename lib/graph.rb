@@ -6,7 +6,7 @@ class Graph
     @nodes = nodes
   end
 
-  def solve(source)
+  def solve_from(source)
     costs = initial_distances(source)
     unvisited = nodes
     until unvisited.empty?

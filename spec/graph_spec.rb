@@ -52,9 +52,9 @@ describe Graph do
     end
 
   end
-  describe '#solve' do
+  describe '#solve_from' do
     it 'returns an array of shortest distances to each node' do
-      expect(graph.solve(:a)).to eq [ 0, 3, 9, 4, 9, 9 ]
+      expect(graph.solve_from(:a)).to eq [ 0, 3, 9, 4, 9, 9 ]
     end
   end
 
